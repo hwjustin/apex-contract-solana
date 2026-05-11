@@ -1,0 +1,24 @@
+# Rust / Anchor build output
+solana/target/
+target/
+
+# Anchor / Solana deploy keypair (upgrade authority — DO NOT COMMIT)
+**/target/deploy/*-keypair.json
+**/deploy/*-keypair.json
+*-keypair.json
+*.so
+
+# Wallets / secrets
+.env
+.env.*
+!.env.example
+*wallet*.json
+*keypair*.json
+
+# Node
+node_modules/
+dist/
+
+# Misc
+.DS_Store
+*.log

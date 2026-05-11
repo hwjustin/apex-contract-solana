@@ -1,0 +1,15 @@
+[workspace]
+members = ["programs/apex-solana"]
+
+[programs.localnet]
+apex_solana = "3YKNvs1ZizwFzbraboHsxAeLSoKx4UFDwxkuNXqMkEX5"
+
+[programs.devnet]
+apex_solana = "3YKNvs1ZizwFzbraboHsxAeLSoKx4UFDwxkuNXqMkEX5"
+
+[provider]
+cluster = "Devnet"
+wallet = "~/.config/solana/apex-deployer.json"
+
+[scripts]
+test = "cargo test --manifest-path programs/apex-solana/Cargo.toml"
